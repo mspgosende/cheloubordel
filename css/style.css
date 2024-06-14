@@ -1,0 +1,90 @@
+body {
+  background-image: url("../img/croissant-pixel-art.jpg");
+  background-size: 200px;
+}
+
+.window {
+  margin: auto;
+  width: 25vw;
+  border: 2px solid #d3d4d5;
+  background-color: #bcbcbc;
+}
+
+.old-border {
+  border-top: 1px solid #acabaa;
+  border-left: 1px solid #acabaa;
+  border-right: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+.window__buttons {
+  background: rgb(1, 66, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 66, 179, 1) 0%,
+    rgba(75, 167, 222, 1) 100%
+  );
+  padding: 2px 5px;
+  color: white;
+}
+
+.window__options {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+.window__options__search {
+  background-color: white;
+  min-width: 50%;
+}
+
+.window__content {
+  background-color: white;
+}
+
+#loading-screen {
+  position: fixed;
+  width: 20%;
+  z-index: 1;
+  background-color: #cac7be;
+  border-top: 2px solid #c0c0c0;
+  border-left: 2px solid #c0c0c0;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.loading-screen__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-screen__content__buttons {
+  margin: 15px;
+}
+
+.loading-container {
+  width: 80%;
+  max-width: 300px;
+  height: 30px;
+  overflow: hidden;
+  padding: 1px;
+  border-top: 2px solid #505250;
+  border-left: 2px solid #505250;
+  border-right: 2px solid #fbf9f1;
+  border-bottom: 2px solid #fbf9f1;
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background-color: #122a7a;
+  animation: load 5s forwards;
+}
+
+@keyframes load {
+  to {
+    width: 100%;
+  }
+}
